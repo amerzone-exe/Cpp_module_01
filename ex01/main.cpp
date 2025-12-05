@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 18:02:44 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/04 18:36:29 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/05 10:03:23 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 int main( void )
 {
-	Zombie carlos("Carlos");
-	carlos.announce();
+	Zombie* horde = zombieHorde(10, "Francis");
 
-	Zombie *merguez = newZombie("Merguez");
-	merguez->announce();
-	delete merguez;
+	for (int i = 0; i < 10; i++)
+		horde[i].announce();
 
-	randomChump("Francis");
+	delete [] horde;
 
 	return 0;
 }

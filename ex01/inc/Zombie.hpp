@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 17:59:06 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/04 18:31:02 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/05 10:06:43 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ class Zombie
 		std::string	_name;
 	
 	public:
-		Zombie( std::string name );
-		~Zombie();
+		Zombie( void );
+		~Zombie( void );
 		
 		void	announce( void );
+		void	setName( std::string name );
 };
 
-Zombie*	newZombie( std::string name );
-void	randomChump( std::string name );
+Zombie* zombieHorde( int N, std::string name);
 
 #endif

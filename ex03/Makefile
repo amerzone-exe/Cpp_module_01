@@ -1,4 +1,4 @@
-NAME = MoarBrainz
+NAME = UnnecessaryViolence
 
 CC = c++
 
@@ -9,8 +9,6 @@ INC = inc
 OBJDIR = obj/
 
 SRC =	main.cpp \
-		zombieHorde.cpp \
-		Zombie.cpp
 
 OBJ := $(addprefix $(OBJDIR), $(SRC:.cpp=.o))
 DEPS = $(OBJ:.o=.d)

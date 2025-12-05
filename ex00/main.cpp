@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 18:02:44 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/04 18:36:29 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/05 08:53:39 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main( void )
 
 	Zombie *merguez = newZombie("Merguez");
 	merguez->announce();
+
 	delete merguez;
 
 	randomChump("Francis");

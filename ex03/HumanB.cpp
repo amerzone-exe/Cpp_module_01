@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/04 18:02:49 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/04 19:58:14 by jpiquet          ###   ########.fr       */
+/*   Created: 2025/12/05 10:48:22 by jpiquet           #+#    #+#             */
+/*   Updated: 2025/12/05 10:48:23 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "HumanB.hpp"
 
-Zombie* newZombie( std::string name)
+HumanB::HumanB( void )
 {
-	Zombie *newZombie = new Zombie(name);
-	return newZombie;
 }
 
-Zombie* zombieHorde( int N, std::string name )
+HumanB::~HumanB( void )
 {
-	
 }
