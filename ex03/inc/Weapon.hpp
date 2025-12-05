@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 10:23:37 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/05 11:00:39 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/05 13:08:15 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ class Weapon
 		std::string	_type;
 
 	public:
-		Weapon( void );
+		Weapon( std::string type );
 		~Weapon( void );
 
-		std::string const &	getType ( void );
+		std::string const &	getType ( void ) const;
 		void		setType ( std::string newType );
 };
 

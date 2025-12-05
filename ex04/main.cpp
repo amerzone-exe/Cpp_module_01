@@ -5,34 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/05 10:47:00 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/05 15:30:15 by jpiquet          ###   ########.fr       */
+/*   Created: 2025/12/05 16:42:41 by jpiquet           #+#    #+#             */
+/*   Updated: 2025/12/05 16:58:20 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "Weapon.hpp"
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+/*Programme à implementer :
+Prendre 3 paramètres : 1 fichier et 2 string (s1 & s2)
 
-int main()
+Le but etant de copier le contenu du fichier dans un nouveau fichier 
+(auquel on rajoutera le suffix => .replace)
+En remplaceant chaque occurence de la 1er string(s1) par la 2eme string(s2)
+*/
+
+int main( int ac, char **av )
 {
-	{
-		Weapon club = Weapon("crude spiked club");
-
-		HumanA bob("Bob", club);
-		bob.attack();
-		club.setType("some other type of club");
-		bob.attack();
-	}
-	{
-		Weapon club = Weapon("crude spiked club");
-
-		HumanB jim("Jim");
-		jim.setWeapon(club);
-		jim.attack();
-		club.setType("some other type of club");
-		jim.attack();
-	}
-	return 0;
+	
 }

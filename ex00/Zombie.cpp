@@ -6,14 +6,16 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 18:02:54 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/05 10:00:37 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/05 16:25:34 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Zombie.hpp"
 
-Zombie::Zombie( std::string name ) : _name(name) {}
+Zombie::Zombie( std::string name ) : _name(name)
+{
+}
 
 Zombie::~Zombie( void )
 {

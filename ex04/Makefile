@@ -1,4 +1,4 @@
-NAME = UnnecessaryViolence
+NAME = SedIsForLosers
 
 CC = c++
 
@@ -9,9 +9,6 @@ INC = inc
 OBJDIR = obj/
 
 SRC =	main.cpp \
-		HumanA.cpp \
-		HumanB.cpp \
-		Weapon.cpp
 
 OBJ := $(addprefix $(OBJDIR), $(SRC:.cpp=.o))
 DEPS = $(OBJ:.o=.d)

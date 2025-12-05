@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 18:02:54 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/05 10:06:29 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/05 15:43:13 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ Zombie::Zombie( void ) {}
 
 Zombie::~Zombie( void )
 {
-	std::cout << this->_name << ": is dead" << std::endl;
+	std::cout << _name << ": is dead" << std::endl;
 }
 
 void	Zombie::announce( void )
 {
-	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 void	Zombie::setName( std::string name )
