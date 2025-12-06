@@ -1,0 +1,13 @@
+To do list :
+
+Faire attention si il y a la meme occurence dans s1 et dans s2
+ca risque de remplacer en boucle.
+
+- Soit corriger le probleme
+- Soit empecher qu'il est une occurence de s1 dans s2.
+
+Regler le probleme a la fin de get ligne, prendre en compte le '\n'.
+
+Si s1 et s2 sont les memes juste copier le contenu du fichier d'origine dans le nouveau.
+
+Essayer d'optimiser peut etre un jour lool.
