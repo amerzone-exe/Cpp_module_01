@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fonction_pointer.c                                 :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amerzone <amerzone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/08 17:10:27 by amerzone          #+#    #+#             */
-/*   Updated: 2025/12/08 17:12:45 by amerzone         ###   ########.fr       */
+/*   Created: 2025/12/06 16:08:54 by jpiquet           #+#    #+#             */
+/*   Updated: 2025/12/08 20:19:17 by amerzone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include <Harl.hpp>
 
-void	HelloWorld()
+int main( void )
 {
-	std::cout << "Hello World" << std::endl;
-}
+    Harl test;
 
-int main()
-{
-	
-	return 0;
+	test.complain("DEBUG");
+	test.complain("INFO");
+	test.complain("WARNING");
+	test.complain("ERROR");
+    test.complain("NOTHING ON THE LIST");
+
+    return 0;
 }
