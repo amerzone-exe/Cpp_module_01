@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 16:05:08 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/09 19:11:06 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/12 13:47:51 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ Harl::~Harl( void )
 {
 }
 
+/*Compare the string level to a an array of string, if level match a function name 
+it's call the function and print the corresponding message*/
 void	Harl::complain( std::string level)
 {
 	std::string	message[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};

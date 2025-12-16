@@ -23,6 +23,8 @@ class Harl
 		void	warning( void );
 		void	error( void );
 
+		int		_filter( std::string level );
+
     public:
         Harl( void );
         ~Harl( void );

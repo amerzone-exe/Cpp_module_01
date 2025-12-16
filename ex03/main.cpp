@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 10:47:00 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/05 15:30:15 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/11 11:31:30 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
+/*The purpose of this program is to show that reference 
+can't be empty and can't be modified and pointer can*/
 int main()
 {
 	{

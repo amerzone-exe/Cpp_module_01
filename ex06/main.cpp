@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amerzone <amerzone@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 16:08:54 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/08 20:19:17 by amerzone         ###   ########.fr       */
+/*   Updated: 2025/12/10 09:05:17 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <Harl.hpp>
 
-int main( void )
+int main( int ac, char **av )
 {
-    Harl test;
+	if (ac != 2 || av[1][0] == '\0')
+		return 1;
 
-	test.complain("DEBUG");
-	test.complain("INFO");
-	test.complain("WARNING");
-	test.complain("ERROR");
-    test.complain("NOTHING ON THE LIST");
+	Harl		filter;	
+	std::string input = av[1];
 
-    return 0;
+	filter.complain( input );
+
+	return 0;
 }

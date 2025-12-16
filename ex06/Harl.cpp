@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 16:05:08 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/09 19:11:41 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/12 13:53:29 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,47 @@ Harl::~Harl( void )
 {
 }
 
-void	Harl::complain( std::string level)
+/*Compare the string level to a an array of string, if level match a function name 
+it's it returns the index else -1*/
+int	Harl::_filter( std::string level )
 {
 	std::string	message[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	funcPtr		complain[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
 	for (int i = 0; i < 4; i++)
 	{
 		if (level == message[i])
-		{
-			(this->*complain[i])();
-			return ;
-		}
+			return i;
 	}
-	std::cout << "Harl has no complain about this" << std::endl;
+	return -1;
+}
+
+/*Get the index (filter) of the array of "complains" and do a switch case depending of it*/
+void	Harl::complain( std::string level)
+{
+	int filter = _filter(level);
+
+	switch (filter)
+	{
+		case 0 :
+			std::cout << "[ DEBUG ]" << std::endl;
+			this->debug();
+			std::cout << std::endl;
+		case 1 :
+			std::cout << "[ INFO ]" << std::endl;
+			this->info();
+			std::cout << std::endl;
+		case 2 :
+			std::cout << "[ WARNING ]" << std::endl;
+			this->warning();
+			std::cout << std::endl;
+		case 3 :
+			std::cout << "[ ERROR ]" << std::endl;
+			this->error();
+			std::cout << std::endl;
+			break;
+		default :
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+	}
 }
 
 void	Harl::debug( void )
