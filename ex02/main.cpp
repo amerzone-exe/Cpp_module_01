@@ -6,7 +6,7 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 10:09:02 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/11 11:00:22 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/16 17:34:48 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,12 @@ int main( void )
 	std::string* stringPTR = &str;
 	std::string& stringREF = str;
 
-	/*Print memory address of each elements*/
 	std::cout << "Memory address :" << std::endl;
 
 	std::cout << "str       = " << &str << std::endl;
 	std::cout << "stringPTR = " << stringPTR << std::endl;
 	std::cout << "stringREF = " << &stringREF << std::endl;
 
-	/*Print value address of each elements*/
 	std::cout << "Value :" << std::endl;
 	
 	std::cout << "str       = " << str << std::endl;

@@ -6,13 +6,16 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 16:42:41 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/12 13:48:51 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/16 17:44:22 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
 #include <string>
+
+/*The purpose to this exercice is to manipulate stream to files and 
+string manipulation with std::string functions*/
 
 int	args_check(int ac, char **av)
 {

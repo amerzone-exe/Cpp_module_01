@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amerzone <amerzone@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 16:08:54 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/08 20:19:17 by amerzone         ###   ########.fr       */
+/*   Updated: 2025/12/16 17:57:07 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <Harl.hpp>
 
+/*The purpose of the exercice is to manipulate pointers on members functions*/
 int main( void )
 {
     Harl test;

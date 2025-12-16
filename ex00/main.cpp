@@ -6,12 +6,14 @@
 /*   By: jpiquet <jpiquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 18:02:44 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/12/11 10:55:34 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/12/16 17:37:22 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
+/*The purpose of this exercice is to show that it's up to us to delete a zombie 
+instance whenever we want went the objet is dynamically allocated.*/
 int main( void )
 {
 	Zombie carlos("Carlos");
